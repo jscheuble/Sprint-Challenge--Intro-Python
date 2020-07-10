@@ -23,8 +23,8 @@ class City:
         self.lat = lat
         self.lon = lon
 
-    def __str__(self):
-        return f'{self.name} {self.lat} {self.lon}'
+    # def __repr__(self):
+    #     return f"City('{self.name}', {self.lat}, {self.lon})"
 
 
 cities = []
@@ -46,7 +46,8 @@ cityreader(cities)
 
 # Print the list of cities (name, lat, lon), 1 record per line.
 for c in cities:
-    print(c.name, c.lat, c.lon)
+    print(f"City('{c.name}', {c.lat}, {c.lon})")
+    # print(c)
 
 # STRETCH GOAL!
 #
